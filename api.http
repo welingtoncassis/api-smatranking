@@ -6,7 +6,27 @@ POST {{local}}/api/v1/jogadores
 Content-Type: application/json
 
 {
-    "nome": "Welington",
-    "email": "welington@gmail.com",
+    "nome": "Welington C A",
+    "email": "wc@gmail.com",
     "telefoneCelular": "21999999999"
 }
+
+### Consultar
+GET {{local}}/api/v1/jogadores
+Content-Type: application/json
+
+{ }
+
+
+### Criar/Consultar/:email
+GET {{local}}/api/v1/jogadores?email=wc@gmail.com
+Content-Type: application/json
+
+{ }
+
+
+### deletar/:email
+DELETE {{local}}/api/v1/jogadores?email=wc@gmail.com
+Content-Type: application/json
+
+{ }
