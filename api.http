@@ -1,0 +1,12 @@
+@local = http://localhost:3000
+
+
+### Criar/Atualizar
+POST {{local}}/api/v1/jogadores
+Content-Type: application/json
+
+{
+    "nome": "Welington",
+    "email": "welington@gmail.com",
+    "telefoneCelular": "21999999999"
+}
