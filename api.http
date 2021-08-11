@@ -6,9 +6,9 @@ POST {{local}}/api/v1/jogadores
 Content-Type: application/json
 
 {
-    "nome": "Welington C A",
-    "email": "wc@gmail.com",
-    "telefoneCelular": "21999999999"
+    "nome": "Carmen C Mattos ",
+    "email": "carmen@gmail.com",
+    "telefoneCelular": "21989999999"
 }
 
 ### Consultar
@@ -18,15 +18,15 @@ Content-Type: application/json
 { }
 
 
-### Criar/Consultar/:email
-GET {{local}}/api/v1/jogadores?email=wc@gmail.com
+### Consultar/:email
+GET {{local}}/api/v1/jogadores?email=wca@gmail.com
 Content-Type: application/json
 
 { }
 
 
 ### deletar/:email
-DELETE {{local}}/api/v1/jogadores?email=wc@gmail.com
+DELETE {{local}}/api/v1/jogadores?email=wca@gmail.com
 Content-Type: application/json
 
 { }
