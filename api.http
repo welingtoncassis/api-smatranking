@@ -1,14 +1,24 @@
 @local = http://localhost:3000
 
 
-### Criar/Atualizar
+### Criar/
 POST {{local}}/api/v1/jogadores
 Content-Type: application/json
 
 {
-    "nome": "Carmen C Mattos ",
-    "email": "carmen@gmail.com",
-    "telefoneCelular": "21989999999"
+    "nome": "Aurora",
+    "email": "aurora@gmail.com",
+    "telefoneCelular": "21999889999"
+}
+
+
+### Altrera (_id)
+PUT {{local}}/api/v1/jogadores/610feae96797640f1a16a550
+Content-Type: application/json
+
+{
+    "nome": "Carmen Mattos",
+    "telefoneCelular": "21999889999"
 }
 
 ### Consultar

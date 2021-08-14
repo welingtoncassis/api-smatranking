@@ -3,9 +3,9 @@ import { Document } from 'mongoose';
 
 export type JogadorDocument = Jogador & Document;
 
-@Schema({ collection: 'jogadores' })
+@Schema({ collection: 'jogadores', timestamps: true })
 export class Jogador {
-  @Prop({ type: String, required: true, unique: true })
+  @Prop({ type: String, required: true })
   telefoneCelular: string;
 
   @Prop({ type: String, required: true, unique: true })
