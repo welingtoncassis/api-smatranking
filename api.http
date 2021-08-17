@@ -6,9 +6,9 @@ POST {{local}}/api/v1/jogadores
 Content-Type: application/json
 
 {
-    "nome": "Aurora",
-    "email": "aurora@gmail.com",
-    "telefoneCelular": "21999889999"
+    "nome": "Welington",
+    "email": "welington@gmail.com",
+    "telefoneCelular": "21999889799"
 }
 
 
