@@ -1,0 +1,66 @@
+@local = http://localhost:3000/v1/api
+
+
+### Criar/
+POST {{local}}/categorias
+Content-Type: application/json
+
+{
+    "categoria": "A",
+    "descricao": "Categoria A",
+    "eventos": [
+        {
+            "nome": "VITORIA",
+            "operacao": "+",
+            "valor": 30
+        },
+                {
+            "nome": "VITORIA_LIDER",
+            "operacao": "+",
+            "valor": 50
+        },
+                {
+            "nome": "DERROTA",
+            "operacao": "+",
+            "valor": 0
+        }
+    ]
+}
+
+
+### Altrera (_id)
+PATCH  {{local}}/categorias/610feae96797640f1a16a550
+Content-Type: application/json
+
+{
+    "nome": "Carmen Mattos",
+    "telefoneCelular": "21999889999"
+}
+
+### Consultar
+GET {{local}}/categorias
+Content-Type: application/json
+
+{ }
+
+
+### Consultar/:id
+GET {{local}}/categorias/613a64743d17ed493e13f0fb
+Content-Type: application/json
+
+{ }
+
+### Atribuir jogador
+POST {{local}}/categorias/A/jogadores/6117e1aa5dd4db3c9e085e23
+Content-Type: application/json
+
+{
+
+}
+
+
+### deletar/:id
+DELETE {{local}}/categorias
+Content-Type: application/json
+
+{ }

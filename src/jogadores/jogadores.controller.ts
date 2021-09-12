@@ -15,7 +15,7 @@ import { Jogador } from './interfaces/jogador.interface';
 import { JogadoresService } from './jogadores.service';
 import { JogadoresValidacaoParametrosPipe } from './pipes/jogadores-validacao-parametros.pipe';
 
-@Controller('api/v1/jogadores')
+@Controller({ version: '1', path: 'api/jogadores' })
 export class JogadoresController {
   constructor(private jogadoresService: JogadoresService) {}
 

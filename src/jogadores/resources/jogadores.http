@@ -1,8 +1,8 @@
-@local = http://localhost:3000
+@local = http://localhost:3000/v1/api
 
 
 ### Criar/
-POST {{local}}/api/v1/jogadores
+POST {{local}}/jogadores
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 
 
 ### Altrera (_id)
-PUT {{local}}/api/v1/jogadores/610feae96797640f1a16a550
+PUT {{local}}/jogadores/610feae96797640f1a16a550
 Content-Type: application/json
 
 {
@@ -22,21 +22,21 @@ Content-Type: application/json
 }
 
 ### Consultar
-GET {{local}}/api/v1/jogadores
+GET {{local}}/jogadores
 Content-Type: application/json
 
 { }
 
 
 ### Consultar/:email
-GET {{local}}/api/v1/jogadores?email=wca@gmail.com
+GET {{local}}/jogadores?email=wca@gmail.com
 Content-Type: application/json
 
 { }
 
 
 ### deletar/:email
-DELETE {{local}}/api/v1/jogadores?email=wca@gmail.com
+DELETE {{local}}/jogadores?email=wca@gmail.com
 Content-Type: application/json
 
 { }
