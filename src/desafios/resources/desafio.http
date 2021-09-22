@@ -1,0 +1,52 @@
+@local = http://localhost:3000/v1/api
+
+
+### Criar/
+POST {{local}}/desafios
+Content-Type: application/json
+
+{
+   "dataHoraDesafio":"2021-09-18T20:13:00",
+   "solicitante":"6117e1aa5dd4db3c9e085e23",
+   "jogadores":[
+      {
+         "_id":"6117e1aa5dd4db3c9e085e23"
+      },
+      {
+         "_id":"610feae96797640f1a16a550"
+      }
+   ]
+}
+
+### Listar/
+GET {{local}}/desafios
+Content-Type: application/json
+
+{}
+
+### Listar/idJogador
+GET {{local}}/desafios?idJogador=6117e1aa5dd4db3c9e085e23
+Content-Type: application/json
+
+{}
+
+### Aceitar Ou Rejeitar Desafio
+PUT {{local}}/desafios/614672b12ad3e7119bda6797
+Content-Type: application/json
+
+{
+   "dataHoraDesafio":"2021-09-18T22:13:00",
+   "status":"ACEITO"
+}
+
+### resultado partida
+POST {{local}}/desafios/614672b12ad3e7119bda6797/partida
+Content-Type: application/json
+
+{
+   "def": "6117e1aa5dd4db3c9e085e23",
+   "resultado": [
+       { "set": "6-1" },
+       { "set": "6-4" }
+   ]
+}

@@ -4,7 +4,7 @@ import { Document } from 'mongoose';
 export type JogadorDocument = Jogador & Document;
 
 @Schema({ collection: 'jogadores', timestamps: true })
-export class Jogador {
+export class Jogador extends Document {
   @Prop({ type: String, required: true })
   telefoneCelular: string;
 

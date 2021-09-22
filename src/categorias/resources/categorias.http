@@ -27,7 +27,6 @@ Content-Type: application/json
     ]
 }
 
-
 ### Altrera (_id)
 PATCH  {{local}}/categorias/610feae96797640f1a16a550
 Content-Type: application/json

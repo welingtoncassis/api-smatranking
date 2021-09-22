@@ -53,6 +53,27 @@ export class CategoriasService {
     return categoria;
   }
 
+  async consultarCategoriaDoJogador(idJogador: any): Promise<Categoria> {
+    /*
+    Desafio
+    Escopo da exceção realocado para o próprio Categorias Service
+    Verificar se o jogador informado já se encontra cadastrado
+    */
+    const jogador = await this.jogadoresService.consultarJogadoresPeloId(
+      idJogador,
+    );
+
+    if (!jogador) {
+      throw new BadRequestException(`O id ${idJogador} não é um jogador!`);
+    }
+
+    return await this.categoriaModel
+      .findOne()
+      .where('jogadores')
+      .in(idJogador)
+      .exec();
+  }
+
   public async atualizarCategoria(
     categoria: string,
     atualizarCategoriaDTO: AtualizarCategoriaDTO,
