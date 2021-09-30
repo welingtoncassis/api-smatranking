@@ -1,0 +1,31 @@
+@local = http://localhost:8080/v1/api
+
+
+### Criar/
+POST {{local}}/categorias
+Content-Type: application/json
+
+{
+    "categoria": "A",
+    "descricao": "Categoria A",
+    "eventos": [
+        {
+            "nome": "VITORIA",
+            "operacao": "+",
+            "valor": 30
+        },
+                {
+            "nome": "VITORIA_LIDER",
+            "operacao": "+",
+            "valor": 50
+        },
+                {
+            "nome": "DERROTA",
+            "operacao": "+",
+            "valor": 0
+        }
+    ]
+}
+
+### listar/
+GET {{local}}/categorias
