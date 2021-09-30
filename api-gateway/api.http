@@ -6,18 +6,18 @@ POST {{local}}/categorias
 Content-Type: application/json
 
 {
-    "categoria": "A",
-    "descricao": "Categoria A",
+    "categoria": "C",
+    "descricao": "Categoria C",
     "eventos": [
         {
             "nome": "VITORIA",
             "operacao": "+",
-            "valor": 30
+            "valor": 10
         },
                 {
             "nome": "VITORIA_LIDER",
             "operacao": "+",
-            "valor": 50
+            "valor": 20
         },
                 {
             "nome": "DERROTA",
